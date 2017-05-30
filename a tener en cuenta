@@ -1,0 +1,20 @@
+******************************************
+Ejecutar servidor?
+
+python manage.py runserver
+
+(probar con python, python2 o python3)
+******************************************
+Migraciones por cada modelo
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+Este comando es para que se creen las tablas correspondientes en la base de datos
+******************************************
+En el caso de que uno se equivoquen en hacer una migracion tienen que eliminar el contenido en la carpeta “migrations” de su aplicación y volver a correr el comando python manage.py makemigrations.
+******************************************
+Error: That port is already in use?
+
+sudo fuser -k 8000/tcp

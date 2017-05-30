@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html><head>
+<title>APP</title>
+</head>
+<body>
+<h1>Académicos!</h1>
+<table style="width:100%">
+<thead>
+<th align="left">Rut</th>
+<th align="left">Nombre</th>
+<th align="left">Apellido</th>
+</thead>
+<tbody>
+{%for academico in var%}
+<tr>
+<td>{{academico.rut}}</td><td>{{academico.nombre}}</td><td>{{academico.apellido}}</td>
+</tr>
+{%endfor%}
+</tbody>
+</table>
+<a href="{% url 'nuevo_academico' %}">Nuevo</a> 
+</body>
+</html>
